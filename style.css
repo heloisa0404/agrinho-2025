@@ -1,258 +1,332 @@
-/* style.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Importa as variáveis e mixins do Bootstrap para usar em customizações, se necessário */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5; /* Um cinza claro suave */
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
+    /* Define uma fonte mais agradável para todo o corpo da página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Adiciona um padding no topo para garantir que o conteúdo não fique escondido sob a navbar */
+    padding-top: 70px;
+    /* Define uma cor de fundo suave para toda a página */
+    background-color: #f8f9fa;
+    /* Suaviza a rolagem para âncoras e navegação */
+    scroll-behavior: smooth;
 }
 
-/* Hero Section (Cabeçalho principal) */
+/* --- */
+
+/* Estilos para a seção hero (cabeçalho principal) */
 .hero-section {
-    background: linear-gradient(rgba(40, 167, 69, 0.85), rgba(33, 136, 56, 0.85)), url('./assets/image/bg-campo.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px 0;
+    /* Fundo com gradiente suave */
+    background: linear-gradient(to right, #28a745, #218838);
+    /* Cor do texto branca para contraste */
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Centraliza o texto */
+    text-align: center;
+    /* Padding para espaçamento interno */
+    padding: 60px 20px;
+    /* Margem inferior para separar do próximo elemento */
+    margin-bottom: 30px;
+    /* Borda arredondada suave */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* Sombra sutil para profundidade */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section h1 {
+    /* Tamanho da fonte maior para o título principal */
     font-size: 3.8rem;
+    /* Peso da fonte para destaque */
     font-weight: 700;
-    margin-bottom: 0.8rem;
-    letter-spacing: 1px;
+    /* Margem inferior para espaçamento */
+    margin-bottom: 10px;
+    /* Efeito de texto com sombra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero-section p {
+.hero-section .lead {
+    /* Tamanho da fonte para o subtítulo */
     font-size: 1.8rem;
-    font-weight: 300;
+    /* Peso da fonte */
+    font-weight: 400;
+    /* Opacidade para o subtítulo */
+    opacity: 0.9;
 }
 
-/* Navbar */
+/* --- */
+
+/* Estilos para a barra de navegação */
 .navbar {
-    border-bottom: 3px solid #1f7d3a; /* Uma borda sutil na cor da sucesso */
+    /* Garante que a navbar fique fixa no topo da página */
+    position: fixed;
+    /* Largura total */
+    width: 100%;
+    /* No topo */
+    top: 0;
+    /* Camada z-index para garantir que fique acima de outros elementos */
+    z-index: 1000;
+    /* Cor de fundo mais escura para a navbar */
+    background-color: #198754 !important; /* Mais escuro que o bg-success padrão do Bootstrap */
+    /* Sombra para destaque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.navbar-nav .nav-link {
+.navbar .nav-link {
+    /* Cor do texto dos links na navbar */
     color: white !important;
-    font-weight: 500;
+    /* Padding maior para os links */
     padding: 0.8rem 1.2rem;
-    transition: all 0.3s ease-in-out;
+    /* Transição suave para efeitos de hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Peso da fonte */
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    /* Cor de fundo ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Texto mais claro ao passar o mouse */
+    color: #e9ecef !important;
+    /* Borda arredondada ao passar o mouse */
     border-radius: 5px;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.15); /* Fundo sutil ao passar o mouse ou ativo */
-    color: #e6e6e6 !important;
+.navbar .nav-link.active {
+    /* Cor de fundo para o link ativo */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Cor do texto para o link ativo */
+    color: #ffffff !important;
+    /* Borda arredondada para o link ativo */
+    border-radius: 5px;
+    /* Peso da fonte para o link ativo */
+    font-weight: 700;
 }
 
-.navbar-toggler {
-    border: none;
+/* --- */
+
+/* Estilos para seções de conteúdo */
+section {
+    padding: 50px 0; /* Padding padrão para todas as seções */
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+/* Estilos para títulos de conteúdo */
+h2 {
+    /* Cor do título */
+    color: #28a745;
+    /* Margem inferior para espaçamento */
+    margin-bottom: 20px;
+    /* Peso da fonte */
+    font-weight: 600;
 }
 
-/* Imagens e Cards */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+h3 {
+    /* Cor do título */
+    color: #343a40;
+    /* Margem inferior para espaçamento */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /* Peso da fonte */
+    font-weight: 600;
 }
 
-.rounded {
-    border-radius: 10px !important;
+/* Estilos para parágrafos "lead" */
+p.lead {
+    /* Tamanho da fonte para parágrafos de destaque */
+    font-size: 1.25rem;
+    /* Peso da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #495057;
+    /* Margem inferior */
+    margin-bottom: 1.5rem;
+    /* Alinhamento justificado para melhor leitura em blocos de texto */
+    text-align: justify;
 }
 
-.shadow-lg {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-}
+/* --- */
 
-.img-card {
-    height: 220px; /* Altura fixa para as imagens do card */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 8px 8px 0 0;
-}
-
+/* Estilos para Cards */
 .card {
-    border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
-    overflow: hidden; /* Garante que as bordas arredondadas sejam aplicadas corretamente */
+    border-radius: 10px;
+    overflow: hidden; /* Garante que a imagem arredondada siga o card */
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important; /* Sombra mais intensa */
+}
+
+.card-img-top.img-card {
+    height: 200px; /* Altura fixa para as imagens dos cards */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
 }
 
 .card-title {
     font-size: 1.4rem;
-    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .card-text {
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-/* Botões */
-.btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-weight: 600;
-}
+/* --- */
 
-.btn-success:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
-    transform: translateY(-2px);
-}
-
-/* Carrossel */
-.carousel-item {
-    height: 550px; /* Altura fixa para os itens do carrossel */
-}
-
-.img-slide {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
+/* Estilos para Carrossel */
+.carousel-item img.img-slide {
+    height: 450px; /* Altura fixa para as imagens do carrossel */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6) !important; /* Fundo mais escuro para melhor leitura */
+    padding: 15px 20px;
     border-radius: 8px;
-    padding: 15px;
-    bottom: 20px;
-    left: 10%;
-    right: 10%;
-    max-width: 80%;
-    margin: 0 auto;
+    bottom: 20px; /* Posicionamento ajustado */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%; /* Limita a largura da legenda */
 }
 
 .carousel-caption h5 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 
 .carousel-caption p {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(40, 167, 69, 0.7);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s ease;
-}
+/* --- */
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(40, 167, 69, 0.9);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent;
-    font-size: 1.5rem;
-}
-
-/* Seção de Contato */
+/* Estilos para a Seção de Contato */
 .contact-section {
-    background: linear-gradient(to right, #28a745, #218838); /* Gradiente de cores */
+    background: linear-gradient(to right, #218838, #28a745); /* Gradiente de fundo */
     color: white;
 }
 
 .contact-section .form-label {
-    color: #dee2e6; /* Cor do label para contraste */
+    color: #343a40; /* Cor do texto dos labels do formulário */
+    font-weight: 500;
 }
 
-.contact-section .form-control {
+.contact-section .form-control,
+.contact-section textarea {
     border-radius: 8px;
     border: 1px solid #ced4da;
-    padding: 0.75rem 1rem;
+    padding: 10px 15px;
 }
 
-/* Rodapé */
+.contact-section .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-section .btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* --- */
+
+/* Estilos para o Rodapé */
 .footer {
-    background-color: #212529; /* Um cinza mais escuro */
-    color: #adb5bd; /* Um cinza claro para o texto */
-    padding: 30px 0;
-    font-size: 0.9rem;
+    /* Cor de fundo para o rodapé */
+    background-color: #343a40;
+    /* Cor do texto branca */
+    color: white;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Padding para espaçamento interno */
+    padding: 20px 0;
+    /* Margem superior para separar do conteúdo */
+    margin-top: 50px;
+    /* Sombra sutil */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.social-icons a {
-    color: #adb5bd;
+.footer p {
+    /* Remove a margem padrão do parágrafo no rodapé */
+    margin-bottom: 0;
+    /* Tamanho da fonte */
+    font-size: 0.9rem;
+    /* Opacidade suave */
+    opacity: 0.8;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
     transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-    color: #28a745; /* Cor verde ao passar o mouse */
+.footer .social-icons a:hover {
+    color: #28a745; /* Cor verde no hover para os ícones sociais */
 }
 
-/* Classes de utilidade e responsividade */
-.text-success {
-    color: #28a745 !important;
-}
+/* --- */
 
-.bg-gradient-success {
-    background: linear-gradient(to right, #28a745, #218838);
-}
-
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
+/* Estilos responsivos para telas menores */
+@media (max-width: 992px) { /* Pequenas telas e tablets */
     .hero-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
-    .hero-section p {
-        font-size: 1.2rem;
+    .hero-section .lead {
+        font-size: 1.4rem;
     }
 
-    .carousel-item {
-        height: 300px;
+    .navbar-collapse {
+        text-align: center; /* Centraliza os itens do menu no modo mobile */
+    }
+
+    .navbar .nav-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória para itens do menu */
+    }
+
+    .navbar .nav-item:last-child {
+        border-bottom: none; /* Remove a linha do último item */
+    }
+
+    .carousel-item img.img-slide {
+        height: 300px; /* Ajusta altura da imagem do carrossel para mobile */
     }
 
     .carousel-caption {
-        padding: 10px;
-        bottom: 10px;
+        font-size: 0.8em;
+        padding: 10px 15px;
     }
 
     .carousel-caption h5 {
-        font-size: 1.2rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.85rem;
+        font-size: 1.25rem;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) { /* Extra pequenas telas (smartphones) */
     .hero-section h1 {
         font-size: 2rem;
     }
 
-    .hero-section p {
-        font-size: 1rem;
+    .hero-section .lead {
+        font-size: 1.2rem;
     }
 
-    .carousel-item {
-        height: 250px;
+    .carousel-item img.img-slide {
+        height: 200px; /* Altura ainda menor para telas muito pequenas */
     }
 
     .carousel-caption {
-        display: none !important; /* Esconde a legenda em telas muito pequenas */
+        display: none !important; /* Oculta a legenda do carrossel em telas muito pequenas */
     }
 }
