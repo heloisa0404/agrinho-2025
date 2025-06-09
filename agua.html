@@ -1,122 +1,262 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessibilidade à Água - AGRINHO 2025</title>
-    <link rel="icon" href="./assets/image/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="agua.css"> </head>
+    <title>Agrinho 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="agua.css">
 
+  
+</head>
 <body>
-    <header class="hero-section text-center text-white py-5">
-        <div class="container">
-            <h1 class="display-3 fw-bold mb-3">AGRINHO 2025</h1>
-            <p class="lead">Festejando Conexão Campo Cidade</p>
-        </div>
-    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-lg-none" href="#">Agrinho 2025</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Página Inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="energia.html">Energia Rural</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="agua.html">Acessibilidade à Água</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="producao.html">Produção e Industrialização</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="cabecalho">
+        <h1>Agrinho 2025</h1>
+        <h2>Festejando conexão Campo Cidade</h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Vida no Campo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="energia.html">Energia Limpa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agua.html">Recursos Hídricos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="producao.html">Produção Sustentável</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <main>
-        <section class="py-5">
-            <div class="container mt-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2 mb-4 mb-md-0">
-                        <img class="img-fluid rounded shadow-lg" src="./assets/image/agua-rural.png"
-                            alt="Imagem representativa de água na zona rural.">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <h2 class="mb-4 text-success fw-bold">Acessibilidade à Água na Zona Rural</h2>
-                        <p class="text-muted lead">A água é um recurso essencial para a vida e para as atividades agrícolas na zona
-                            rural. Garantir o acesso à água de qualidade e em quantidade suficiente é fundamental para o
-                            desenvolvimento sustentável do campo, a produção de alimentos e o bem-estar das comunidades
-                            rurais.</p>
-                        <p class="text-muted lead">Diversos desafios podem dificultar a acessibilidade à água no meio rural, como a
-                            seca, a contaminação de fontes hídricas, a falta de infraestrutura adequada para captação e
-                            distribuição, e a gestão inadequada dos recursos hídricos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+     <audio id="musica" autoplay loop playsinline>
+  <source src="Som de Corda Solta.mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
 
-        <section class="bg-light py-5">
-            <div class="container">
-                <h3 class="text-center mb-5 text-success fw-bold">Desafios e Soluções para a Acessibilidade à Água</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4 class="mb-3 text-success fw-bold">Desafios Comuns</h4>
-                        <ul>
-                            <li>Escassez hídrica em períodos de seca.</li>
-                            <li>Poluição de rios e nascentes por atividades humanas e agrotóxicos.</li>
-                            <li>Infraestrutura precária para armazenamento e distribuição de água.</li>
-                            <li>Falta de saneamento básico, impactando a qualidade da água.</li>
-                            <li>Conflitos pelo uso da água entre diferentes setores.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="mb-3 text-success fw-bold">Possíveis Soluções</h4>
-                        <ul>
-                            <li>Implementação de sistemas de captação e armazenamento de água da chuva.</li>
-                            <li>Construção e manutenção de poços artesianos e cisternas.</li>
-                            <li>Proteção e recuperação de nascentes e matas ciliares.</li>
-                            <li>Investimento em sistemas de irrigação eficientes para reduzir o consumo de água.</li>
-                            <li>Educação ambiental e práticas de uso consciente da água.</li>
-                            <li>Implementação de políticas públicas para garantir o acesso à água e ao saneamento básico no meio rural.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 0.2; // volume máximo
+</script>
 
-    <footer class="footer bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 Agrinho - Festejando a conexão campo cidade. Todos os direitos reservados.</p>
-            <div class="social-icons mt-3">
-                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-youtube fa-lg"></i></a>
-            </div>
+
+<script>
+  const musica = document.getElementById('musica');
+  
+  // Força a tocar o áudio (mesmo que bloqueie, tenta)
+  musica.volume = 0.5;
+  musica.play().catch(e => {
+    console.log('Autoplay bloqueado, sem som até interação.');
+  });
+</script>
+
+<audio id="somClick" src="clique.mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<div class="container my-4">
+  <h2 style="margin-bottom: 15px;">Água no Campo</h2>
+  <p>
+    A água é um recurso fundamental para o desenvolvimento das atividades rurais. No campo, o manejo eficiente da água é essencial para garantir a irrigação adequada das plantações, a manutenção do solo fértil e o abastecimento das comunidades locais. 
+  </p>
+  <p>
+    Práticas como a captação de água da chuva, a construção de reservatórios e o uso de sistemas de irrigação modernos contribuem para a sustentabilidade ambiental e a produtividade agrícola. Além disso, a preservação das nascentes e dos rios é crucial para a manutenção do equilíbrio ecológico das regiões rurais.
+  </p>
+  <p>
+    O acesso à água de qualidade também impacta diretamente a saúde e o bem-estar das pessoas que vivem no campo, reforçando a importância de políticas públicas e tecnologias que promovam o uso consciente e a conservação desse recurso vital.
+  </p>
+</div>
+
+<div class="container my-4">
+  <div style="border: 2px solid blueviolet; border-radius: 10px; padding: 20px; background-color: #f9f0ff;">
+    <h3 style="color: blueviolet; margin-bottom: 15px;">Pessoas do Campo e a Água</h3>
+    <p>
+      As pessoas que vivem no campo dependem diretamente da água para suas atividades diárias e produtivas. Elas desenvolvem práticas tradicionais e inovadoras para captar, conservar e usar a água de forma responsável, garantindo a sustentabilidade das comunidades rurais.
+    </p>
+    <p>
+      A relação próxima com a água faz com que essas pessoas sejam guardiãs dos recursos hídricos, promovendo a preservação das nascentes, o uso eficiente da irrigação e o cuidado com os rios e lagos que abastecem o campo e a cidade.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="container my-4">
+  <div style="border: 2px solid blueviolet; border-radius: 12px; padding: 15px; background-color: #f9f0ff; display: flex; justify-content: center; gap: 20px;">
+    <img src="assets/image/agua.png.jpeg" alt="Imagem 1" class="img-fluid rounded" style="max-width: 45%; height: auto;">
+    <img src="assets/image/agua1.png.jpeg" alt="Imagem 2" class="img-fluid rounded" style="max-width: 45%; height: auto;">
+  </div>
+</div>
+
+<div class="container my-4">
+  <h2>Água no Campo</h2>
+  <p>A água é essencial para a vida e para as atividades rurais. Confira alguns pontos importantes sobre seu uso e conservação:</p>
+  <ul>
+    <li><strong>Captação de água da chuva:</strong> Técnica eficiente para armazenar água e reduzir o uso de fontes naturais.</li>
+    <li><strong>Irrigação sustentável:</strong> Métodos que otimizam o uso da água, como irrigação por gotejamento.</li>
+    <li><strong>Preservação de nascentes:</strong> Proteção das fontes naturais para garantir o abastecimento contínuo.</li>
+    <li><strong>Tratamento de água:</strong> Garantia de água limpa para consumo humano e animal.</li>
+    <li><strong>Uso consciente:</strong> Educação e práticas para evitar o desperdício e proteger o meio ambiente.</li>
+  </ul>
+</div>
+
+<div class="container my-5" style="display: flex; gap: 40px; flex-wrap: wrap;">
+
+  <!-- Texto -->
+  <div style="flex: 1; min-width: 300px;">
+    <h2>Água: Essência da Vida no Campo</h2>
+    <p>
+      A água é um dos recursos mais preciosos do planeta e a base para toda a vida. No ambiente rural, sua importância se torna ainda mais evidente, pois é indispensável para a agricultura, a criação de animais, o consumo humano e a preservação dos ecossistemas naturais. Sem água, o campo simplesmente não existiria.
+    </p>
+    <p>
+      Ao longo da história da Terra, a água tem desempenhado um papel fundamental no surgimento e desenvolvimento das espécies. No campo, a gestão sustentável da água é crucial para garantir a produção de alimentos e a manutenção da biodiversidade, assegurando que as futuras gerações também possam usufruir desses recursos.
+    </p>
+    <p>
+      Além disso, as comunidades rurais têm um conhecimento profundo sobre o uso consciente da água, aplicando técnicas tradicionais e modernas para captação, armazenamento e irrigação eficiente. Essas práticas não apenas aumentam a produtividade, mas também ajudam a conservar as fontes hídricas e a evitar o desperdício.
+    </p>
+    <p>
+      Com as mudanças climáticas e o aumento da demanda, o cuidado com a água no campo deve ser prioridade, promovendo a sustentabilidade e o equilíbrio ambiental. Investir em educação, tecnologia e preservação é investir no futuro do campo e do planeta.
+    </p>
+  </div>
+
+  <!-- Linha do tempo estilo árvore filogenética -->
+  <div style="flex: 1; min-width: 300px;">
+
+    <ul style="list-style: none; padding-left: 20px; position: relative; font-family: monospace;">
+
+      <!-- Linha vertical principal -->
+      <div style="position: absolute; top: 10px; left: 10px; width: 3px; height: 100%; background-color: blueviolet;"></div>
+
+      <!-- Item 1 -->
+      <li style="position: relative; margin-bottom: 40px; padding-left: 30px;">
+        <div style="position: absolute; left: 0; top: 8px; width: 20px; height: 3px; background-color: blueviolet;"></div>
+        <strong>4,5 bilhões de anos atrás</strong><br>
+        Formação dos oceanos e surgimento da água líquida na Terra, criando o ambiente necessário para a vida.
+      </li>
+
+      <!-- Item 2 -->
+      <li style="position: relative; margin-bottom: 40px; padding-left: 30px;">
+        <div style="position: absolute; left: 0; top: 8px; width: 20px; height: 3px; background-color: blueviolet;"></div>
+        <strong>3,8 bilhões de anos atrás</strong><br>
+        Aparecimento das primeiras formas de vida unicelular em ambientes aquáticos, demonstrando a relação direta entre a água e a origem da vida.
+      </li>
+
+      <!-- Item 3 -->
+      <li style="position: relative; margin-bottom: 40px; padding-left: 30px;">
+        <div style="position: absolute; left: 0; top: 8px; width: 20px; height: 3px; background-color: blueviolet;"></div>
+        <strong>600 milhões de anos atrás</strong><br>
+        Diversificação dos organismos aquáticos e início da colonização da terra firme, graças à disponibilidade e circulação da água nos ambientes terrestres.
+      </li>
+
+      <!-- Item 4 -->
+      <li style="position: relative; margin-bottom: 40px; padding-left: 30px;">
+        <div style="position: absolute; left: 0; top: 8px; width: 20px; height: 3px; background-color: blueviolet;"></div>
+        <strong>Atualidade</strong><br>
+        A água permanece essencial para a agricultura sustentável, o abastecimento das comunidades rurais e a preservação dos ecossistemas, sendo fundamental para o futuro do campo e do planeta.
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2 style="color: blueviolet; margin-bottom: 20px;">Perguntas Frequentes sobre Água no Campo</h2>
+
+  <div class="accordion" id="faqAgua">
+    <!-- Pergunta 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Qual a importância da água para a agricultura no campo?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAgua">
+        <div class="accordion-body">
+          A água é essencial para o crescimento das plantas, irrigação das culturas e manutenção do solo fértil. Sem água suficiente, as produções agrícolas são comprometidas, afetando a segurança alimentar.
         </div>
+      </div>
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Como as comunidades rurais podem preservar os recursos hídricos?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAgua">
+        <div class="accordion-body">
+          Através de técnicas como captação de água da chuva, uso eficiente da irrigação, proteção das nascentes e conservação das matas ciliares, as comunidades rurais ajudam a manter os recursos hídricos disponíveis para o futuro.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Quais são os principais desafios relacionados à água no campo atualmente?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAgua">
+        <div class="accordion-body">
+          Entre os principais desafios estão a escassez em períodos de seca, contaminação por agrotóxicos, uso excessivo e a degradação das fontes naturais, que afetam a disponibilidade e qualidade da água.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pergunta 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Quais tecnologias auxiliam no uso sustentável da água no campo?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAgua">
+        <div class="accordion-body">
+          Tecnologias como irrigação por gotejamento, sensores de umidade do solo, sistemas de captação e armazenamento de água da chuva e o uso de energia renovável para bombear água contribuem para o uso eficiente e sustentável dos recursos hídricos.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container my-4">
+  <h2 style="color: blueviolet; margin-bottom: 10px;">Referência</h2>
+  <p>
+    <a href="https://www.embrapa.br/agua-na-agricultura" target="_blank" style="color: purple; text-decoration: none;">
+      Água na Agricultura - Embrapa
+    </a>
+  </p>
+</div>
+
+
+
+
+    <footer>
+        Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo cidade.
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
